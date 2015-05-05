@@ -55,7 +55,6 @@ public class userservices {
 	
 	@GET
 	@Path("/getHeaderParams")
-	
 	public void getHeaderParams(@Context HttpHeaders hh){
 		System.out.println("Header parameters are : ");
 		MultivaluedMap<String, String> mmHH = hh.getRequestHeaders();
